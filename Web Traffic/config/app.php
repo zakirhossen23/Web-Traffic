@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'SurfyApp',
+    'name' => 'Web Traffic Exchanger',
 
     'installed' => env('APP_INSTALLED', false),
 

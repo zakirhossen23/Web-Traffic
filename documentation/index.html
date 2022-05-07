@@ -1,0 +1,445 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Surfy - Traffic Exchange</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Blue_Coder">
+	<meta name="copyright" content="Blue_Coder">
+	<meta name="generator" content="Documenter v2.0 https://evp.to/documenter">
+	<meta name="date" content="2020-08-24T00:00:00+02:00">
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#333636;color:#20A8E2;}
+		::selection{background:#333636;color:#20A8E2;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#20A8E2;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#20A8E2;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-surfy-traffic-exchange">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#overview" title="Overview">Overview</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#payment_gateways" title="Payment Gateways">Payment Gateways</a></li>
+			<li><a href="#smtp" title="SMTP">SMTP</a></li>
+			<li><a href="#captcha" title="Captcha">Captcha</a></li>
+			<li><a href="#cron_job" title="Cron Job">Cron Job</a></li>
+			<li><a href="#how_to" title="How To">How To</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright TrafficExchangeScript 2020<br>
+		made with the <a href="https://evp.to/documenter">Documenter v2.0</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Surfy - Traffic Exchange</h1>
+	
+	<div id="documenter_buttons">
+		<a href="#" class="btn btn-primary btn-large">CHANGELOG</a> <a href="https://trafficexchangescript.net/product/surfy-traffic-exchange-system/" class="btn btn-large">PURCHASE</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 08/19/2020</li>
+	<li>Latest update: 07/25/2021</li>
+	<li>By: TrafficExchangeScript</li>
+	<li><a href="http://trafficexchangescript.net/">trafficexchangescript.net</a></li>
+	<li>Email: <a href="mailto:support@trafficexchangescript.net">support@trafficexchangescript.net</a></li>
+	</ul>
+	<p>Thank you for your purchase! If you have any questions that are beyond the scope of this help file, please feel free to email us via page contact form <a href="https://trafficexchangescript.net/content/contact-us/">here</a>. Thanks!</p>
+	</section>
+
+	<section id="overview">
+	<div class="page-header"><h3>Overview</h3><hr class="notop"></div>
+<p>
+	<strong>Surfy&nbsp;</strong>is a powerful &amp; responsive Traffic Exchange System built based on the standard Laraval, an open-source PHP web framework that is largely based on the MVC architecture with many great features, user friendly and easy to customize.</p>
+<p>
+	You simply install, add packages, set up the payment gateway, and you are ready to start your own Traffic Exchange Website!</p>
+<p>
+	&nbsp;</p>
+<p>
+	<img alt="" src="assets/images/image_2.jpg" style="display:block;margin:0 auto;"></p>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<h2>
+	<strong>1. Server Requirements</strong></h2>
+<p>
+	<strong>Surfy requires certain technical requirements to be met for the website to operate properly:</strong></p>
+<ol>
+	<li>
+		PHP version between 5.5.9 - 7.1.*</li>
+	<li>
+		OpenSSL PHP Extension</li>
+	<li>
+		PDO PHP Extension</li>
+	<li>
+		Mbstring PHP Extension</li>
+	<li>
+		Tokenizer PHP Extension</li>
+	<li>
+		JSON PHP Extension</li>
+	<li>
+		Rewrite Module (Apache or Nginx)</li>
+</ol>
+<p>
+	<strong>File and folder permissions</strong></p>
+<ol>
+	<li>
+		/bootstrap&nbsp; &nbsp; &nbsp; &nbsp;775</li>
+	<li>
+		/storage&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 775 (recursively)</li>
+</ol>
+<p>
+	<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: inherit; color: inherit; background-color: transparent; border-radius: 0px; padding: 0px; text-shadow: rgb(255, 255, 255) 0px 1px; white-space: pre-wrap;">These extensions must be enabled for Surfy to install properly on the web server.</code></p>
+<p>
+	&nbsp;</p>
+<h2>
+	<strong>2. Installing Surfy</strong></h2>
+<p>
+	&nbsp;</p>
+<h4 id="installation_span_style"box_sizing_border_box_font_weight_700"step_1_extract_and_upload_span"><span style="box-sizing: border-box; font-weight: 700;">Step 1 : Extract and Upload</span></h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	Unzpip the Surfy Traffic Exchange package and upload the&nbsp;<span style="box-sizing: border-box; font-weight: 700;">contents</span>&nbsp;of&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Surfy</span>&nbsp;upload folder to your server root, usually will be one of the following paths :<br style="box-sizing: border-box;">
+	-&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/path/to/www/</code><br style="box-sizing: border-box;">
+	-&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/path/to/html/</code><br style="box-sizing: border-box;">
+	-&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/path/to/public_html/</code><br style="box-sizing: border-box;">
+	-&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/path/to/www/vhosts/domain.tld/httpdocs/</code></p>
+<div class="alert alert-warning" role="alert" style="box-sizing: border-box; padding: 15px; margin-bottom: 20px; border-color: rgb(250, 235, 204); border-radius: 2px; color: rgb(138, 109, 59); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<span style="box-sizing: border-box; font-weight: 700;">Important :</span>&nbsp;Always use a desktop application like&nbsp;<a href="https://filezilla-project.org/" rel="noopener noreferrer" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">FileZilla</a>&nbsp;to upload files to FTP as opposed to web based file managers to avoid issues with corrupted or not properly uploaded files.</div>
+<h4 id="installation__nbsp">&nbsp;</h4>
+<h4 id="installation_span_style"box_sizing_border_box_font_weight_700"step_2_creating_database_span"><span style="box-sizing: border-box; font-weight: 700;">Step 2 : Creating Database</span></h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	Create a database for SurfyApp through your server control panel. If your server has phpMyAdmin, then you can also create a database using phpMyAdmin.</p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Open&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file.</li>
+	<li style="box-sizing: border-box;">
+		Copy and paste your database details in the file.</li>
+</ul>
+<pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(252, 252, 252); border-color: rgb(231, 231, 231); border-radius: 4px;">
+<a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!" style="box-sizing: border-box; background-color: rgb(109, 92, 174); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin-bottom: 0px; font-size: 12px; line-height: 20px; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: none; border-radius: 2px; transition: opacity 0.4s ease-in-out 0s; position: absolute; top: 26px; right: 13px; opacity: 0; z-index: 9;">Copy</a>DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+</pre>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Save changes and re-upload the&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file.</li>
+	<li style="box-sizing: border-box;">
+		You are done!</li>
+</ul>
+<p>
+	&nbsp;</p>
+<h4 id="installation_span_style"box_sizing_border_box_font_weight_700"step_3_run_installation_wizard_span"><span style="box-sizing: border-box; font-weight: 700;">Step 3 : Run Installation Wizard</span></h4>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	After you created a database and uploaded the files, simply open up your site in the browser (like http://mysite.com, you will redirect to http://mysite.com/install) and follow on-screen instructions to complete the installation.</p>
+</section>
+<section id="payment_gateways">
+	<div class="page-header"><h3>Payment Gateways</h3><hr class="notop"></div>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	Currently, the script support these payment gateways :</p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Paypal</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	PayPal is one of the largest online payment transfer platforms in the world, serving more than 200 countries in 25 currencies to collect international payments.</p>
+<h2>
+	&nbsp;</h2>
+<h2>
+	<strong>Paypal</strong></h2>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	Visit the official documentation:&nbsp;<a href="https://developer.paypal.com/developer/applications/create" rel="noopener noreferrer" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">https://developer.paypal.com/developer/applications/create</a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<span style="box-sizing: border-box; font-weight: 700;">Setup</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Copy and paste the PayPal API client ID and secret keys into the /.env file.</li>
+	<li style="box-sizing: border-box;">
+		Open and edit the&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file by providing your keys like this:</li>
+</ul>
+<pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(252, 252, 252); border-color: rgb(231, 231, 231); border-radius: 4px;">
+<a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!" style="box-sizing: border-box; background-color: rgb(109, 92, 174); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin-bottom: 0px; font-size: 12px; line-height: 20px; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: none; border-radius: 2px; transition: opacity 0.4s ease-in-out 0s; position: absolute; top: 26px; right: 13px; opacity: 0; z-index: 9;">Copy</a>PAYPAL_MODE=sandbox
+PAYPAL_CLIENT_ID=null
+PAYPAL_SECRET=null
+</pre>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		You have to use&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">PAYPAL_MODE=live</code>&nbsp;in your live server.</li>
+	<li style="box-sizing: border-box;">
+		You are done!</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	Now visit&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Admin Panel</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Packages</span>&nbsp;to create new packages.</p>
+</section>
+<section id="smtp">
+	<div class="page-header"><h3>SMTP</h3><hr class="notop"></div>
+<p>
+	<span id="smtp-definition" style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">What is SMTP Server ?</span></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	An SMTP (Simple Mail Transfer Protocol) server is an application that&rsquo;s primary purpose is to send, receive, and/or relay outgoing mail between email senders and receivers. Most e-mail systems that send mail over the Internet use SMTP to send messages from one server to another; the messages can then be retrieved with an e-mail client using either POP or IMAP. In addition, SMTP is generally used to send messages from a mail client to a mail server. This is why you need to specify both the POP or IMAP server and the SMTP server when you configure your e-mail application.</p>
+<div class="alert alert-warning" role="alert" style="box-sizing: border-box; padding: 15px; margin-bottom: 20px; border-color: rgb(250, 235, 204); border-radius: 2px; color: rgb(138, 109, 59); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<span style="box-sizing: border-box; font-weight: 700;">NOTE :</span>&nbsp;Some hosting providers blocks port 25 or 465 in that case you have change your SMTP email server or contact your hosting provider.</div>
+<h2>
+	<strong>Setup SMTP Server</strong></h2>
+<p>
+	<span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">Using your own or some SMTP server</span><span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">&nbsp;</span><span style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">/.env file setup</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Login to your FTP account.</li>
+	<li style="box-sizing: border-box;">
+		Open and Edit&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file.</li>
+	<li style="box-sizing: border-box;">
+		Copy and paste your server smtp details in the file.</li>
+</ul>
+<pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(252, 252, 252); border-color: rgb(231, 231, 231); border-radius: 4px;">
+<a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!" style="box-sizing: border-box; background-color: rgb(109, 92, 174); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin-bottom: 0px; font-size: 12px; line-height: 20px; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: none; border-radius: 2px; transition: opacity 0.4s ease-in-out 0s; position: absolute; top: 26px; right: 13px; opacity: 0; z-index: 9;">Copy</a><code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: inherit; color: inherit; background-color: transparent; border-radius: 0px; padding: 0px; text-shadow: rgb(255, 255, 255) 0px 1px; white-space: pre-wrap;">MAIL_DRIVER=<span style="box-sizing: border-box; font-weight: 700;">smtp</span>
+MAIL_HOST=your-mail-host
+MAIL_PORT=your-mail-port
+MAIL_USERNAME=your-mail-username
+MAIL_PASSWORD=your-mail-password
+MAIL_FROM_ADDRESS=your-mail-address
+MAIL_FROM_NAME=your-mail-name
+MAIL_ENCRYPTION=your-mail-encryption</code></pre>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Replace&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-host</code>,&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-port</code>,&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-username</code>,&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-password</code>,&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-address</code>,&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-name</code>&nbsp;and&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-mail-encryption</code>.</li>
+	<li style="box-sizing: border-box;">
+		Save changes and re-upload the&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file.</li>
+	<li style="box-sizing: border-box;">
+		You are done!</li>
+</ul>
+</section>
+<section id="captcha">
+	<div class="page-header"><h3>Captcha</h3><hr class="notop"></div>
+<h4 id="captcha_a_href"file_c_appserv_www_nouveau%20dossier_laraclassified_documentation_indexhtml_recaptcha_key"_style"box_sizing_border_box_background_color_transparent_color_rgb_0,_0,_0_text_decoration_line_none"recaptcha_key_a"><a href="file:///C:/AppServ/www/Nouveau%20dossier/laraclassified/documentation/index.html#recaptcha-key" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 0, 0); text-decoration-line: none;">Recaptcha Key</a></h4>
+<h5 id="what-is-recaptcha" style="box-sizing: border-box; font-family: Raleway, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 10px; margin-bottom: 10px; font-size: 21px;">
+	<a href="file:///C:/AppServ/www/Nouveau%20dossier/laraclassified/documentation/index.html#what-is-recaptcha" style="box-sizing: border-box; background-color: transparent; color: rgb(0, 0, 0); text-decoration-line: none;">What is recaptcha</a>?</h5>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	reCAPTCHA is a free CAPTCHA service that helps protect your site against spam, malicious registrations and other forms of attacks where computers try to disguise themselves as a human. reCAPTCHA comes in the form of a widget that you can easily add to your blog, forum, registration.</p>
+<p>
+	<span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">How to setup.</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Visit&nbsp;<a href="https://www.google.com/recaptcha/admin" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">https://www.google.com/recaptcha/admin</a></li>
+	<li style="box-sizing: border-box;">
+		Follow the steps by select the reCAPTCHA version and get your&nbsp;<span style="box-sizing: border-box; font-weight: 700;">site key</span>&nbsp;and your&nbsp;<span style="box-sizing: border-box; font-weight: 700;">secret key</span>.</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<span style="box-sizing: border-box; font-weight: 700;"><code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file setup</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Login to your FTP account</li>
+	<li style="box-sizing: border-box;">
+		Open&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">/.env</code>&nbsp;file.</li>
+	<li style="box-sizing: border-box;">
+		Provide the keys there.</li>
+</ul>
+<pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(252, 252, 252); border-color: rgb(231, 231, 231); border-radius: 4px;">
+<a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!" style="box-sizing: border-box; background-color: rgb(109, 92, 174); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin-bottom: 0px; font-size: 12px; line-height: 20px; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: none; border-radius: 2px; transition: opacity 0.4s ease-in-out 0s; position: absolute; top: 26px; right: 13px; opacity: 0; z-index: 9;">Copy</a><code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: inherit; color: inherit; background-color: transparent; border-radius: 0px; padding: 0px; text-shadow: rgb(255, 255, 255) 0px 1px; white-space: pre-wrap;">NOCAPTCHA_SECRET=your-recaptcha-secret_key
+NOCAPTCHA_SITEKEY=your-recaptcha-site_key</code></pre>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Replace&nbsp;&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-nocaptcha-site_key</code>&nbsp;and&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">your-nocaptcha-secret_key</code>&nbsp;by your keys.</li>
+	<li style="box-sizing: border-box;">
+		Save the file.</li>
+	<li style="box-sizing: border-box;">
+		You are done.</li>
+</ul>
+</section>
+<section id="cron_job">
+	<div class="page-header"><h3>Cron Job</h3><hr class="notop"></div>
+<h4 id="cron_job_span_style"box_sizing_border_box_font_weight_700"how_can_i_start_the_scheduler_span"><span style="box-sizing: border-box; font-weight: 700;">How can I start the Scheduler?</span></h4>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">The Scheduler will execute:</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		The Credits Clear command (Set credits to 0 where credits are less than 0) every hour.</li>
+</ul>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	When using the scheduler, you only need to add the following Cron entry to your server.</p>
+<pre style="box-sizing: border-box; overflow: auto; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 13px; padding: 9.5px; margin-top: 0px; margin-bottom: 10px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; overflow-wrap: break-word; background-color: rgb(252, 252, 252); border-color: rgb(231, 231, 231); border-radius: 4px;">
+<a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!" style="box-sizing: border-box; background-color: rgb(109, 92, 174); color: rgb(255, 255, 255); display: inline-block; padding: 5px 10px; margin-bottom: 0px; font-size: 12px; line-height: 20px; text-align: center; white-space: nowrap; vertical-align: middle; touch-action: manipulation; cursor: pointer; user-select: none; background-image: none; border: none; border-radius: 2px; transition: opacity 0.4s ease-in-out 0s; position: absolute; top: 26px; right: 13px; opacity: 0; z-index: 9;">Copy</a>* * * * * {PHP_BIN_PATH} /path/to/YourWebsite/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</pre>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	This Cron will call the Laravel command scheduler every minute. When the&nbsp;<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, &quot;Courier New&quot;, monospace; font-size: 14.4px; color: rgb(244, 100, 95); background-color: rgb(240, 242, 241); border-radius: 4px; padding: 2px 4px; text-shadow: rgb(255, 255, 255) 0px 1px;">schedule:run</code>&nbsp;command is executed, Laravel will evaluate your scheduled tasks and runs the tasks that are due.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-decoration-line: underline;">
+	PHP command examples:</p>
+<p>
+	<span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">General example:</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		/usr/local/bin/php /home/user/public_html/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</li>
+</ul>
+<p>
+	<span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">Domain-specific example:</span></p>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		/usr/local/bin/ea-php99 /home/user/yoursite.com/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</li>
+</ul>
+<div class="alert alert-warning" role="alert" style="box-sizing: border-box; padding: 15px; margin-bottom: 20px; border-color: rgb(250, 235, 204); border-radius: 2px; color: rgb(138, 109, 59); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<span style="box-sizing: border-box; font-weight: 700;">NOTE :</span>&nbsp;In the above example, replace &quot;ea-php99&quot; with the PHP version assigned to the domain you wish to use. Look in the MultiPHP Manager from the cPanel for the actual PHP version assigned to a domain.</div>
+<hr style="box-sizing: content-box; height: 0px; margin-top: 40px; margin-bottom: 40px; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial; border-top-style: solid; border-top-color: rgb(238, 238, 238); color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+<h4 id="cron_job_span_style"box_sizing_border_box_font_weight_700"more_information_about_cron_job_span"><span style="box-sizing: border-box; font-weight: 700;">More information about Cron Job:</span></h4>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		<a href="https://crontab.guru/every-1-hour" rel="noopener" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">https://crontab.guru/every-1-hour</a></li>
+	<li style="box-sizing: border-box;">
+		<a href="https://code.tutsplus.com/tutorials/scheduling-tasks-with-cron-jobs--net-8800" rel="noopener" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">https://code.tutsplus.com/tutorials/scheduling-tasks-with-cron-jobs--net-8800</a></li>
+	<li style="box-sizing: border-box;">
+		<a href="http://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job" rel="noopener" style="box-sizing: border-box; background-color: transparent; color: rgb(88, 163, 211); text-decoration-line: none;" target="_blank">http://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job</a></li>
+</ul>
+</section>
+<section id="how_to">
+	<div class="page-header"><h3>How To</h3><hr class="notop"></div>
+<h5 style="box-sizing: border-box; font-family: Raleway, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 10px; margin-bottom: 10px; font-size: 21px;">
+	<span style="box-sizing: border-box; font-weight: 700;">How can I setup the packages/Plans?</span></h5>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Go to your&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Admin panel</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Packages</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Packages List</span></li>
+	<li style="box-sizing: border-box;">
+		Select a package and edit it</li>
+	<li style="box-sizing: border-box;">
+		NOTE: You can add new packages or delete current packages in the actual&nbsp;version.</li>
+</ul>
+<h5 style="box-sizing: border-box; font-family: Raleway, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 10px; margin-bottom: 10px; font-size: 21px;">
+	<span style="box-sizing: border-box; font-weight: 700;">How can I change the default Autosurf time?</span></h5>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Go to your&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Admin panel</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">System</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">General Settings</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Surf Tab</span></li>
+	<li style="box-sizing: border-box;">
+		In the next field, type the number of seconds which will be used to display each website during the autosurf exchange.</li>
+	<li style="box-sizing: border-box;">
+		Click Save Changes.</li>
+</ul>
+<h5 style="box-sizing: border-box; font-family: Raleway, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 400; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 10px; margin-bottom: 10px; font-size: 21px;">
+	<span style="box-sizing: border-box; font-weight: 700;">How to manually add a new user /or admin accounts?</span></h5>
+<ul style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">
+	<li style="box-sizing: border-box;">
+		Go to your&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Admin panel</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Users</span>&nbsp;-&gt;&nbsp;<span style="box-sizing: border-box; font-weight: 700;">Add User</span></li>
+	<li style="box-sizing: border-box;">
+		Fill out the forms with information about the new user.</li>
+	<li style="box-sizing: border-box;">
+		Click Save Changes.</li>
+</ul>
+<p>
+	<span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">Please see more features by visiting your&nbsp;</span><span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">Admin panel</span><span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">&nbsp;-&gt;&nbsp;</span><span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">System</span><span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">&nbsp;-&gt;&nbsp;</span><span style="box-sizing: border-box; font-weight: 700; color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">General Settings</span><span style="color: rgb(51, 51, 51); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px;">...</span></p>
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<p>
+	I&#39;ve used the following images, icons or other files as listed.</p>
+<ul>
+	<li>
+		<a href="https://laravel.com/">Laravel</a></li>
+	<li>
+		<div>
+			<a href="http://jquery.com/">jQuery</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://jqueryui.com/easing/">jQuery Easing</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="http://uniformjs.com/">Uniform.js</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://modernizr.com/">Modernizr JS</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://github.com/imakewebthings/waypoints/">Waypoints</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="http://markdalgleish.com/projects/stellar.js/">Stellar Parallax JS</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://getbootstrap.com/">Bootstrap</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://www.chartjs.org/">Chart.js</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://animate.style/">Animate.css</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://icomoon.io/">Icomoon Icon Fonts</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl Carousel</a></div>
+	</li>
+	<li>
+		<div>
+			<a href="https://colorlib.com/">ColorLib</a></div>
+	</li>
+</ul>
+<hr>
+<p>
+	Once again, thank you so much for purchasing this script. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this script. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the script, you might consider visiting the contact form page to contact us directly.</p>
+</section>
+
+	</div>
+</body>
+</html>
