@@ -32,6 +32,7 @@ $(document).ready(function () {
                 success: function(response) {
                     var data = response;
                     var timer = data.time;
+                    var points = data.points;
                     
                     myWindow = window.open(data.website.url, "Traffic Exchange", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=yes, copyhistory=no, width=800,height=600, top=100, left=400,"); 
 
@@ -54,7 +55,9 @@ $(document).ready(function () {
                                     "_token": "{{ csrf_token() }}"
                                 },
                                 success: function(response) {
-                                    alert(response);
+                                    var element = document.getElementById("credits_earned")                                    
+                                    $parsed = Number(element.textContent.replace(/[^\d]/g,''));
+                                    element.textContent = $parsed + points
                                     openWin();
                                 }
                             });
@@ -124,7 +127,7 @@ $(document).ready(function () {
                                     <tbody>
                                         <tr>
                                             <td>{{Request::getClientIp()}}</td>
-                                            <td>{{number_format($credits_earned, 2)}}</td>
+                                            <td id="credits_earned">{{number_format($credits_earned, 2)}}</td>
                                             <td><span id="status" class="badge badge-danger">Inactive</span></td>
                                         </tr>
                                     </tbody>

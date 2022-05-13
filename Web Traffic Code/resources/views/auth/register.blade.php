@@ -21,6 +21,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
 	
@@ -58,10 +59,10 @@
 			<div class="top-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="/">Surfy</a></div>
+						<div class="col-md-4">
+							<div id="colorlib-logo"><a href="/">WEB TRAFFIC EXCHANGER</a></div>
 						</div>
-						<div class="col-md-10 text-right menu-1">
+						<div class="col-md-8 text-right menu-1">
                             <ul>
 								<li><a href="/">Home</a></li>
 								@if (Auth::guest())
@@ -80,20 +81,8 @@
 			</div>
 		</nav>
 
-		<section id="home" class="video-hero" data-section="home">
+		<section id="home" class="video-hero" style="height:100px;" data-section="home">
 		<div class="overlay"></div>
-			<div class="display-t display-t2 text-center">
-				<div class="display-tc display-tc2">
-					<div class="container">
-						<div class="col-md-12 col-md-offset-0">
-							<div class="animate-box">
-								<h2>Register</h2>
-								<p class="breadcrumbs"><span><a href="/">Home</a></span> <span>Register</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<div id="colorlib-contact">
@@ -192,9 +181,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 colorlib-widget">
-						<h4 class="f-logo" style="font-size:31px;">SURFY</h4>
-						<p>An Awesome Traffic Exchange System</p>
-						<p>
+						<h4 class="f-logo" style="font-size:31px;">WEB TRAFFIC EXCHANGER</h4>
+					<p>Your audience is at the corner. Make sure they find you</p>						<p>
 							<ul class="colorlib-social-icons">
 								<li><a href="#"><i class="icon-twitter"></i></a></li>
 								<li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -229,8 +217,7 @@
 							<li>291 South 21th Street, <br> Suite 721 New York NY 10016</li>
 							<li><a href="tel://1234567920"><i class="icon-phone"></i> + 1235 2355 98</a></li>
 							<li><a href="mailto:info@yoursite.com"><i class="icon-envelope"></i> info@yoursite.com</a></li>
-							<li><a href="#"><i class="icon-location4"></i> yourwebsite.com</a></li>
-						</ul>
+							<li><a href="https://webtraffic.live/"><i class="icon-location4"></i> webtraffic.live</a></li>						</ul>
 					</div>
 				</div>
 			</div>

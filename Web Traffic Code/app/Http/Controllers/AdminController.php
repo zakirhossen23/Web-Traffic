@@ -197,6 +197,7 @@ class AdminController extends Controller
                 'username' => 'required|unique:users',
                 'email' => 'required|unique:users',
                 'credits' => 'required',
+                'slots' => 'required',
                 'password' => 'required|min:6',
                 'userlevel' => 'required',
                 'active' => 'required',
@@ -207,6 +208,7 @@ class AdminController extends Controller
             $user->username = $request->input('username');
             $user->email = $request->input('email');
             $user->credits = $request->input('credits');
+            $user->slots = $request->input('slots');
             $user->password = Hash::make($request->input('password'));
             $user->userlevel = $request->input('userlevel');
             $user->active = $request->input('active');
@@ -233,6 +235,7 @@ class AdminController extends Controller
             $user->username = $request->username;
             $user->email = $request->email;
             $user->credits = $request->credits;
+            $user->slots = $request->slots;
             if($request->password != "") {
                 $user->password = Hash::make($request->password);
             }
