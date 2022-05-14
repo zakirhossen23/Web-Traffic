@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUserActivitiesTable extends Migration
+class CreatePaymentHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,14 @@ class CreateUserActivitiesTable extends Migration
      */
     public function up()
     {
-        if(Schema::hasTable('user_activities')) return; 
-        Schema::create('user_activities', function (Blueprint $table) {
+        if(Schema::hasTable('payment_histories')) return; 
+        Schema::create('payment_histories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->float('credits_earned')->default('0');
-            $table->integer('hits_received')->default('0');
-            $table->timestamps();
+            $table->integer('credits')->default('0');
+            $table->integer('price')->default('0');
+            $table->timestamp('date');
         });
     }
 
@@ -30,6 +30,6 @@ class CreateUserActivitiesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('user_activities');
+        Schema::drop('payment_histories');
     }
 }

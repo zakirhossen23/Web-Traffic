@@ -12,6 +12,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        if(Schema::hasTable('users')) return; 
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
@@ -19,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('username');
             $table->string('password');
             $table->float('credits')->default(75);
+            $table->integer('slots')->default(3);
             $table->string('refid')->nullable();
             $table->string('banned')->default(0);
             $table->tinyInteger('userlevel')->default(0);
